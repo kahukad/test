@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+/* メニューバー */
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a{
+    display: block;
+    color: gray;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+ul.menu li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    transition: .3s;
+}
+ul.menu{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+ul.menu > li{
+    width: 25%;
+}
+ul.menu > li > a{
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+ul.menu > li > ul{
+    display: none;
+    position: absolute;
+    width: 20%;
+}
+ul.menu li:hover a + ul{
+    display: block;
+}
+ul.menu > li > ul > li > a{
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid rgb(138, 138, 138);
+}
+
+/* 黒い箱 */
+.test{
+    margin: auto;
+    margin-top: 30px;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+}
+.test:hover{
+    opacity: 0.7;
+}
+
+/* 入力フォーム */
+.ny{
+    text-align: center;
+    margin: 30px;
+}
+.ny a{
+    text-decoration: none;
+    color: gray;
+}
